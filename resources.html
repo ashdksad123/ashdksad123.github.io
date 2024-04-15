@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Brave Battlers</title>
+
+  <!-- seo starts here  -->
+  <meta name="description" content="Your one stop for everything related to Breast Cancer, including, symptoms, treatment, faqs, etc."/>
+  <meta name="author" content="Ashutosh Dash">
+  <meta name="keywords"
+          content="breast cancer, breast, cancer, awareness, breast cancer awareness, breast cancer treatment, breast cancer symptoms, treatment, symptoms, breast cancer faqs, breast cancer faq, open source, open sourcing, contributing to open source" />
+  <meta name="robots" content="index,follow" />
+  <meta name="Googlebot" content="index,follow" />
+  <meta name="AdsBot-Google" content="index,follow" />
+  <meta property="og:site_name" content="https://breastcancerawareness.netlify.app/">
+  <meta property="og:title" content="Breast Cancer Awareness | Your one stop for everything related to Breast Cancer">
+  <meta property="og:description" content="Your one stop for everything related to Breast Cancer, including, symptoms, treatment, faqs, etc."/>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://breastcancerawareness.netlify.app/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="https://breastcancerawareness.netlify.app/">
+  <meta name="application-name" content="Breast Cancer Awareness | Home" />
+  <meta name="apple-mobile-web-app-title" content="Breast Cancer Awareness | Home" />
+  <meta name="summary" content="An open source project aimed at creating awareness against Breast Cancer">
+<!-- seo ends here  -->
+<!--Google Adsense-->
+  <script data-ad-client="ca-pub-6040728715717881" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- links including fonts and third part library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- AOS  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <!-- favicon -->
+  <link rel="icon" href="assets/media/pink-ribbon-logo-png-transparent-719x899.ico" type="image/ico">
+
+<!-- chart js CDN  -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+</head>
+
+<body onload="loader()">
+
+  <div id="loading"></div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i></button>
+<!-- nav bar starts here  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-pink">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Brave Battlers</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./resources.html">Resources<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./faq.html">FAQs</a>
+              </li>
+            
+            </ul>
+        </div>
+    </nav>
+
+    <p>Here, you can find links to reputable organizations for research, financial aid, counseling services, and community support groups. This section is provided as a community service and is not affiliated with any of the listed organizations, nor does it receive any financial compensation from them. Our goal is to help you access the support and information you need in one convenient place.</p>
+    <div style="display: flex; justify-content: space-around; padding: 20px;">
+        <!-- Card 1: American Cancer Society -->
+        <div style="width: 30%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; border-radius: 10px;">
+            <h3 style="color: #333;">American Cancer Society</h3>
+            <p style="color: #666;">Dedicated to helping persons who face cancer. Supports research, patient services, early detection, treatment and education.</p>
+            <button style="background-color: pink; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;" onclick="window.location.href='https://www.cancer.org/'">Learn More</button>
+        </div>
+    
+        <!-- Card 2: Cancer Support Community -->
+        <div style="width: 30%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; border-radius: 10px;">
+            <h3 style="color: #333;">Cancer Support Community</h3>
+            <p style="color: #666;">Offers a network of services and education for patients and their families.</p>
+            <button style="background-color: pink; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;" onclick="window.location.href='https://www.cancersupportcommunity.org/'">Join Now</button>
+        </div>
+    
+        <!-- Card 3: National Cancer Institute -->
+        <div style="width: 30%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; border-radius: 10px;">
+            <h3 style="color: #333;">National Cancer Institute</h3>
+            <p style="color: #666;">Part of the U.S. National Institutes of Health, it conducts and supports research, training, health information dissemination.</p>
+            <button style="background-color: pink; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;" onclick="window.location.href='https://www.cancer.gov/'">Discover</button>
+        </div>
+    </div>
+    
+    <div style="display: flex; justify-content: space-around; padding: 20px;">
+        <!-- Card 1: St. Jude Children's Research Hospital -->
+        <div style="width: 30%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; border-radius: 10px;">
+            <h3 style="color: #333;">St. Jude Children's Research Hospital</h3>
+            <p style="color: #666;">Advancing cures, and means of prevention, for pediatric catastrophic diseases through research and treatment.</p>
+            <button style="background-color: pink; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;" onclick="window.location.href='https://www.stjude.org/'">Learn More</button>
+        </div>
+    
+        <!-- Card 2: Susan G. Komen for the Cure -->
+        <div style="width: 30%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; border-radius: 10px;">
+            <h3 style="color: #333;">Susan G. Komen for the Cure</h3>
+            <p style="color: #666;">Focused on breast cancer education, research, advocacy, health services and social support programs in the U.S.</p>
+            <button style="background-color: pink; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;" onclick="window.location.href='https://www.komen.org/'">Join Now</button>
+        </div>
+    
+        <!-- Card 3: Leukemia & Lymphoma Society -->
+        <div style="width: 30%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; border-radius: 10px;">
+            <h3 style="color: #333;">Leukemia & Lymphoma Society</h3>
+            <p style="color: #666;">Dedicated to fighting blood cancers, providing patient support and advocacy.</p>
+            <button style="background-color: pink; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;" onclick="window.location.href='https://www.lls.org/'">Discover</button>
+        </div>
+    </div>
+    
+    <div style="display: flex; justify-content: space-around; padding: 20px;">
+        <!-- Card 1: Dana-Farber Cancer Institute -->
+        <div style="width: 30%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; border-radius: 10px;">
+            <h3 style="color: #333;">Dana-Farber Cancer Institute</h3>
+            <p style="color: #666;">Committed to providing the best treatment available today while developing tomorrow's cures through cutting-edge research.</p>
+            <button style="background-color: pink; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;" onclick="window.location.href='https://www.dana-farber.org/'">Learn More</button>
+        </div>
+    
+        <!-- Card 2: Memorial Sloan Kettering Cancer Center -->
+        <div style="width: 30%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; border-radius: 10px;">
+            <h3 style="color: #333;">Memorial Sloan Kettering Cancer Center</h3>
+            <p style="color: #666;">One of the world's premier cancer centers, dedicated to exceptional patient care, leading-edge research, and superb educational programs.</p>
+            <button style="background-color: pink; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;" onclick="window.location.href='https://www.mskcc.org/'">Join Now</button>
+        </div>
+    
+        <!-- Card 3: Stand Up To Cancer -->
+        <div style="width: 30%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; border-radius: 10px;">
+            <h3 style="color: #333;">Stand Up To Cancer</h3>
+            <p style="color: #666;">Innovative research approach to accelerate the development of new cancer treatments.</p>
+            <button style="background-color: pink; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;" onclick="window.location.href='https://standuptocancer.org/'">Discover</button>
+        </div>
+    </div>
+    
+
+    <footer class="site-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Brave Battlers is dedicated to raising cancer awareness and supporting those affected by this challenging disease. Our site offers educational resources, personal stories of resilience, and the latest developments in cancer treatment and prevention. </a>
+              </p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="./index.html">Home <i class="fas fa-home"></i></a></li>
+                <li><a href="./contact.html">Contact <i class="fas fa-phone-square"></i></a></li>
+                <li><a href="./faq.html">FAQs <i class="fas fa-comment-dots"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2024 Rights Reserved by 
+           <a href="./index.html">Brave Battlers Breast Cancer Awareness Program</a>.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+    <!-- footer ends here -->
+    
+    <!-- js tags  -->
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader(){
+        preloader.style.display = 'none';
+      }
+    </script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+  </body>
+  </html>
+  
